@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'game.dart';
+import 'game/level1.dart';
+import 'game/level2.dart';
+import 'game/level3.dart';
+import 'game/level4.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
@@ -22,7 +25,7 @@ class HomePage extends StatelessWidget {
                     ColorizeAnimatedText(
                       'Welcome Back Marvel!',
                       textAlign: TextAlign.center,
-                      speed: const Duration(seconds: 3),
+                      speed: const Duration(seconds: 1),
                       textStyle: const TextStyle(
                         fontSize: 48.0,
                         fontWeight: FontWeight.bold,
@@ -42,7 +45,7 @@ class HomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const GamePage()),
+                      MaterialPageRoute(builder: (context) => const Level1()),
                     );
                   },
                   child: const Card(
@@ -50,7 +53,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.blue,
                     child: Center(
                       child: Text(
-                        'Play Now',
+                        'Easy',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 24.0,
@@ -62,13 +65,18 @@ class HomePage extends StatelessWidget {
               ),
               Expanded(
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Level2()),
+                    );
+                  },
                   child: const Card(
                     margin: EdgeInsets.all(16.0),
                     color: Colors.orange,
                     child: Center(
                       child: Text(
-                        'Coming Soon...',
+                        'Medium',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 24.0,
@@ -80,13 +88,18 @@ class HomePage extends StatelessWidget {
               ),
               Expanded(
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Level3()),
+                    );
+                  },
                   child: const Card(
                     margin: EdgeInsets.all(16.0),
                     color: Colors.green,
                     child: Center(
                       child: Text(
-                        'Coming Soon...',
+                        'Hard',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 24.0,
@@ -98,13 +111,18 @@ class HomePage extends StatelessWidget {
               ),
               Expanded(
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Level4()),
+                    );
+                  },
                   child: const Card(
                     margin: EdgeInsets.all(16.0),
                     color: Colors.purple,
                     child: Center(
                       child: Text(
-                        'Coming Soon...',
+                        'Pro',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 24.0,

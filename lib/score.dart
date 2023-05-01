@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'game.dart';
+import 'package:memory_marvels/game/level1.dart';
 
 class ScoreCardPage extends StatefulWidget {
   final int score;
@@ -49,7 +48,7 @@ class _ScoreCardPageState extends State<ScoreCardPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const GamePage()),
+                      MaterialPageRoute(builder: (context) => const Level1()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
