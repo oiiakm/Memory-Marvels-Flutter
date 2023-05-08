@@ -63,5 +63,5 @@ We welcome contributions from anyone! If you find a bug or have an idea for a ne
 
 
 ## Credits
-Memory Marvels was created by [oiiakm](https://github.com/oiiakm).
+Memory Marvels was created by [AMIT KUMAR](https://github.com/oiiakm).
 
